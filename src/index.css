@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: #71AEAF;
+  color: #fff;
+}
+
+.App {
+  width: 75%;
+  margin: 10% auto;
+  border: 5px solid #121A3F;
+}
+
+.App .todo_head{
+  text-align: center;
+  color: #E1B91C;
+  background-color: #0E2557;
+  padding: 10px;
+}
+
+
+.TodoItems .row {
+  font-weight: bolder;
+  color: #0E2557;
+  background-color: #fff;
+  border-bottom: 5px solid #121A3F;
+}
+.TodoItems span {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+  font-size: 20px;
+  
+}
+.TodoItems .row .title {
+  color: #0E2557;
+  background-color: #E1B91C;
+  
+}
+
+.TodoItems .id {
+ width: 5%;
+ border-right: 5px solid #0E2557;
+}
+.TodoItems .name{
+  width: 55%;
+  border-right: 5px solid #0E2557;
+}
+.TodoItems .phone{
+  width: 30%;
+  border-right: 5px solid #0E2557;
+}
+.TodoItems .action{
+  width: 10%;
+  cursor: pointer;
+}
+
+
+form input {
+ outline: none;
+}
+
+form input[type=text]{
+  width: 60%;
+  padding: 5px;
+  border-right: 5px solid #0E2557;
+}
+form input[type=number]{
+  width: 30%;
+  padding: 5px;
+  border-right: 5px solid #0E2557;
+}
+form input[type=submit]{
+  width: 10%;
+  padding: 5px;
+  background-color: #3BA9CA;
+  border: none;
+  cursor: pointer;
+}
+
+  /* Small */
+@media (max-width: 767px) { 
+  .App {  width: 95%;  }
+  .TodoItems .name{  width: 40%;  }
+  .TodoItems .phone{  width: 40%;  }
+  .TodoItems .action{  width: 15%; font-size: 15px; padding: 12px 0; }
+
+  form input[type=text]{  width: 45%;  }
+  form input[type=number]{  width: 40%; }
+  form input[type=submit]{  width: 15%;  }
+
+}
+  /* Medium */
+@media (max-width: 991px) { 
+  .App {
+    width: 90%;
+  }
+}
+
